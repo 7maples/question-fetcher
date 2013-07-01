@@ -1,7 +1,8 @@
 require "question/fetcher/version"
+require 'pry'
+require 'faraday'
+require 'json'
 
-module Question
-  module Fetcher
-    # Your code goes here...
-  end
+module QuestionFetcher
+  extend self
 end

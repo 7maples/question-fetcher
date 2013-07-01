@@ -1,6 +1,6 @@
 # Question::Fetcher
 
-TODO: Write a gem description
+Question fetcher for the Backchannel conference chat application (gSchool group project). To be integrated with main app so users can post questions and vote on them (https://github.com/7maples/backchannel-app).
 
 ## Installation
 

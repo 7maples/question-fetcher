@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Question::Fetcher::VERSION
   spec.authors       = ["Jennifer Eliuk"]
   spec.email         = ["jen7maples@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Question fetcher for Backchannel app}
+  spec.summary       = %q{Serves questions and their votes for conference chats}
   spec.homepage      = ""
   spec.license       = "MIT"
 
