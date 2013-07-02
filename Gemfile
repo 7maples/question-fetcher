@@ -1,4 +1,13 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in question-fetcher.gemspec
+gem 'rake'
+gem 'faraday'
+
+
+group :test do
+  gem 'vcr'
+  gem 'webmock'
+  gem 'pry'
+end
+
 gemspec
