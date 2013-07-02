@@ -26,7 +26,7 @@ private
     response = conn.get do |req|
       req.url "/api/tracks/#{track_id}/questions"
     end
-    JSON.parse(response.body)
+    response.body.empty? ? [] : JSON.parse(response.body)
   end
 
   def post_questions(data)

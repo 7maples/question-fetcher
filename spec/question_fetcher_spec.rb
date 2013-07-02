@@ -11,6 +11,13 @@ describe QuestionFetcher do
           expect(questions.last["question"]["track_id"]).to eq 2
         end
       end
+
+      # it "should return an empty array if there are no questions yet" do
+      #   VCR.use_cassette('.for_tracks_no_questions') do
+      #     questions = QuestionFetcher.for_tracks(5)
+      #     expect(questions).to eq []
+      #   end
+      # end
     end
   end
 
@@ -28,3 +35,4 @@ describe QuestionFetcher do
     end
   end
 end
+

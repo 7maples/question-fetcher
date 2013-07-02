@@ -23,20 +23,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"3e944761008b89e9bcb8c847e0151b70"'
+      - '"eddd178d2ed5bf6822f935475e6fa6fb"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1344fc9d671f8d0048749203941b8eb0
+      - d0f28aefe9b2bf3ef4af604931d1330a
       X-Runtime:
-      - '0.008860'
+      - '0.005981'
       Connection:
       - close
       Server:
       - thin 1.5.1 codename Straight Razor
     body:
       encoding: UTF-8
-      string: '{"question":{"body":"Hello world?","created_at":"2013-07-02T17:35:48Z","id":9,"track_id":2,"updated_at":"2013-07-02T17:35:48Z","user_id":3,"vote_count":0}}'
+      string: '{"question":{"body":"Hello world?","created_at":"2013-07-02T22:04:30Z","id":11,"track_id":2,"updated_at":"2013-07-02T22:04:30Z","user_id":3,"vote_count":0}}'
     http_version: 
-  recorded_at: Tue, 02 Jul 2013 17:35:48 GMT
+  recorded_at: Tue, 02 Jul 2013 22:04:30 GMT
 recorded_with: VCR 2.5.0
