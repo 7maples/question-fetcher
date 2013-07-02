@@ -7,8 +7,8 @@ describe QuestionFetcher do
       it "should only return questions for the specified track_id" do
         VCR.use_cassette('.for_tracks check track_id') do
           questions = QuestionFetcher.for_tracks(2)
-          expect(questions.first["track_id"]).to eq 2
-          expect(questions.last["track_id"]).to eq 2
+          expect(questions.first["question"]["track_id"]).to eq 2
+          expect(questions.last["question"]["track_id"]).to eq 2
         end
       end
     end
@@ -20,9 +20,9 @@ describe QuestionFetcher do
         VCR.use_cassette('.create_question check reponse') do
           data = { body: "Hello world?", user_id: 3, track_id: 2}
           question = QuestionFetcher.create_question(data)
-          expect(question["body"]).to eq "Hello world"
-          expect(question["user_id"]).to eq 3
-          expect(question["track_id"]).to eq 2
+          expect(question["question"]["body"]).to eq "Hello world?"
+          expect(question["question"]["user_id"]).to eq 3
+          expect(question["question"]["track_id"]).to eq 2
         end
       end
     end

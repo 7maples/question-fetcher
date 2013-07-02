@@ -23,10 +23,10 @@ private
   end
 
   def fetch_questions(track_id)
-   response = conn.get do |req|
+    response = conn.get do |req|
       req.url "/api/tracks/#{track_id}/questions"
     end
-   JSON.parse(response.body)
+    JSON.parse(response.body)
   end
 
   def post_questions(data)
