@@ -14,6 +14,10 @@ module QuestionFetcher
     post_questions(data)
   end
 
+  def vote(data)
+    post_vote(data)
+  end
+
 private
 
   def conn
@@ -27,6 +31,14 @@ private
       req.url "/api/tracks/#{track_id}/questions"
     end
     response.body.empty? ? [] : JSON.parse(response.body)
+  end
+
+  def post_vote(data)
+    response = conn.post do |req|
+      req.url "/api/tracks/#{data[:track_id]}/questions/#{data[:question_id]}/vote"
+      req.headers['Content-Type'] = 'application/json'
+      req.body = {vote: { user_id: data[:user_id]}}.to_json
+    end
   end
 
   def post_questions(data)
